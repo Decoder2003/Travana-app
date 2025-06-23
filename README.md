@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚖 Travana – Decentralized Ride-Sharing App
 
-## Getting Started
+Travana is a privacy-first, decentralized ride-sharing platform built using React Native and Aptos blockchain. It protects user location using fuzzy geohashing, leverages AI to suggest intelligent pickup zones, and mints NFT receipts after every ride.
 
-First, run the development server:
+📱 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔐 Web3 wallet integration
+- 📍 Fuzzy location matching using Geohashing
+- 🧠 AI-based clustering of public POIs for smart pickup zones
+- 🚕 Ride booking and zone-based driver matching
+- 🧾 Smart contract-based payment escrow
+- 🎖️ NFT ride receipt minted post-ride
+- 🏆 Points and rewards system based on ride activity
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧱 Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- React Native + Expo (Frontend)
+- Sui Blockchain (Move smart contracts)
+- IPFS (ride metadata storage)
+- JavaScript / TypeScript (core logic)
+- Express.js (backend for clustering / POIs)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📂 App Structure
 
-## Learn More
+- /screens
 
-To learn more about Next.js, take a look at the following resources:
+  - WelcomeScreen.tsx
+  - Dashboard.tsx
+  - BookingScreen.tsx
+  - RideStatus.tsx
+  - SummaryScreen.tsx
+  - ProfileScreen.tsx
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- /services
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  - wallet.ts
+  - geohash.ts
+  - nft.ts
+  - rideAPI.ts
 
-## Deploy on Vercel
+- /components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - MapView
+  - ZoneSelector
+  - NFTCard
+  - PointsTracker
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔧 Setup & Run
+
+1. Clone the repo
+
+   git clone [https://github.com/Decoder2003/Travana-app](https://github.com/Decoder2003/Travana-app)
+
+2. Install dependencies
+
+   cd travana-app
+   npm install
+
+3. Start Expo
+
+   npx expo start
+
+4. Run on mobile (scan QR from Expo Go) or emulator
