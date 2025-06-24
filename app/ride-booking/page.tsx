@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useSearchParams } from "next/navigation"
+// import { useSearchParams } from "next/navigation"
 import { MapPin, Shield, Car, Users, Zap, Wallet, CheckCircle, ArrowRight } from "lucide-react"
 
 const rideOptions = [
@@ -32,8 +32,8 @@ const rideOptions = [
 ]
 
 export default function RideBookingPage() {
-  const searchParams = useSearchParams()
-  const rideType = searchParams.get("type")
+  // const searchParams = useSearchParams()
+  // const rideType = searchParams.get("type")
 
   const [pickup, setPickup] = useState("")
   const [destination, setDestination] = useState("")

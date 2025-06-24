@@ -194,7 +194,7 @@ export default function HistoryPage() {
         <div className="gradient-secondary rounded-xl p-8 text-white text-center">
           <Diamond className="mx-auto text-purple-400 mb-4" size={48} />
           <h2 className="text-2xl font-bold mb-4">Ride NFTs</h2>
-          <p className="text-gray-300 mb-6">You've collected {nftCount} unique ride NFTs</p>
+          <p className="text-gray-300 mb-6">You&apos;ve collected {nftCount} unique ride NFTs</p>
           <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors inline-flex items-center space-x-2">
             <span>View Collection</span>
             <Diamond size={16} />

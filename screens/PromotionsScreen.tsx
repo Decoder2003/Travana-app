@@ -147,11 +147,11 @@ export default function PromotionsScreen() {
               onPress={() => handlePromotionPress(promotion)}
             >
               <LinearGradient
-                colors={promotion.color}
-                style={styles.promotionGradient}
-                start={{ x: 0, y: 0 }}
-                end={{ x: 1, y: 0 }}
-              >
+  colors={promotion.color as [string, string]}
+  style={styles.promotionGradient}
+  start={{ x: 0, y: 0 }}
+  end={{ x: 1, y: 0 }}
+>
                 <View style={styles.promotionContent}>
                   <View style={styles.promotionHeader}>
                     <View style={styles.promotionIconContainer}>

@@ -1,3 +1,11 @@
+# Team Details
+
+- Team Name : EncoderDecoder
+- Member 1 : Krishna Aggarwal
+- Member 2 : Dhruv Kalra
+
+---
+
 # 🚖 Travana – Decentralized Ride-Sharing App
 
 Travana is a privacy-first, decentralized ride-sharing platform built using React Native and Aptos blockchain. It protects user location using fuzzy geohashing, leverages AI to suggest intelligent pickup zones, and mints NFT receipts after every ride.
